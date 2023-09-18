@@ -21,9 +21,9 @@ const Body = () => {
     
 
     return(
-        <div className={`grid lg:grid-cols-[minmax(200px,220px)_auto] flex-grow dark:text-white dark:bg-black`}>
-            <Sidebar />
-            <div className={`${isDrawMenu && screenWidth < 1024 ? "hidden" : ""}`}>
+        <div className={`flex flex-col dark:text-white dark:bg-black`}>
+            <Sidebar screenWidth={screenWidth} />
+            <div className={`${isDrawMenu ? "hidden" : ""}`}>
                 <Outlet />
             </div>
         </div>

@@ -1,30 +1,20 @@
+import { DETAILS } from "../utils/constants"
+
 const GettingStarted = () => {
     return(
-        <div className="ml-5 mt-5">
-            <h1 className="font-semibold text-3xl my-6">npm i Ullas</h1>
-            <h1 className="font-semibold text-4xl my-6">Who am I?</h1>
-            <p className="my-4 whitespace-pre-wrap ">This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. v
-            This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
+        <div className="ml-5 mt-5 h-full pr-5">
+            <h1 className="font-semibold text-sm my-6 text-yellow-200">npm i Ullas</h1>
+            <h1 className="font-semibold text-2xl my-6">{DETAILS.summary}</h1>
+            <p className="my-4 whitespace-pre-wrap">
+                {DETAILS.whomami}
             </p>
-            <h1 className="font-semibold text-4xl my-6">Why frontend?</h1>
-            <p className="my-4 whitespace-pre-wrap ">This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            </p>
-            <h1 className="font-semibold text-4xl my-6">Backend?</h1>
-            <p className="my-4 whitespace-pre-wrap ">This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            </p>
-            <h1 className="font-semibold text-4xl my-6">Outro</h1>
-            <p className="my-4 whitespace-pre-wrap ">This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            This is a sample of how I would introduce myself. This is a sample of how I would introduce myself. 
-            </p>
-            <h1 className="font-semibold text-3xl my-6">npm clean cache</h1>
+            <h1 className="font-semibold text-2xl my-6">{DETAILS.why}</h1>
+            <p className="my-4 whitespace-pre-wrap ">{DETAILS.what}</p>
+            <h1 className="font-semibold text-2xl my-6">{DETAILS.also}</h1>
+            <p className="my-4 whitespace-pre-wrap ">{DETAILS.backend}</p>
+            <h1 className="font-semibold text-2xl my-6">{DETAILS.and}</h1>
+            <p className="my-4 whitespace-pre-wrap ">{DETAILS.outro}</p>
+            <h1 className="font-semibold text-sm my-6 text-yellow-200">npm clean cache</h1>
         </div>
     )
 }
