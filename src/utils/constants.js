@@ -84,3 +84,8 @@ export const SHOWCASE_NOTE = {
         }
     ]
 }
+
+export const FOOTER = {
+    githubLink: "https://github.com/uk974q?tab=overview&from=2023-09-01&to=2023-09-19",
+    linkedin: "https://www.linkedin.com/in/ullasm/"
+}

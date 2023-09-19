@@ -12,16 +12,21 @@ const Header = () => {
     // console.log("Hi",location.pathname == "/")
     
     const isDark = useSelector((store) => store.darkMode.isDark)
+    const toggleBodyColor = (add, remove) => {
+        document.getElementById("portfolioApp").classList.add(add)
+        document.getElementById("portfolioApp").classList.remove(remove)
+    }
     useEffect(() => {
         isDark ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
+        isDark ? toggleBodyColor('bg-black','bg-slate-100') : toggleBodyColor('bg-slate-100','bg-black')
     },[isDark])
     return(
-        <div className="bg-white border-x-0 text-black shadow-lg dark:bg-slate-900 dark:bg-gradient-to-b dark:from-black dark:text-white  dark:border-b-red-900  justify-between flex items-center p-5">
+        <div className="bg-slate-200 border-x-0 text-black shadow-lg dark:bg-slate-900 dark:bg-gradient-to-b dark:from-black dark:text-white  dark:border-b-red-900  justify-between flex items-center p-5">
             <div className="flex items-center">               
                 <Link to={"/"}>
                     <span className="mr-3 text-xl lg:text-2xl">Frontend Developer</span>
                 </Link>
-                <span className="bg-slate-100 text-black dark:bg-slate-500 dark:text-white text-sm rounded-lg px-2">{experience}</span>
+                <span className="bg-slate-500 text-white dark:bg-slate-500 mt-2 text-sm rounded-lg px-2">{experience}</span>
             </div>
             <div className="ml-5 pr-5 flex items-center">
                 {location.pathname !== "/" ? (<i onClick={() => dispatchAction(toggleDrawMenu())} className="las la-bars text-xl cursor-pointer lg:hidden"></i>) : null}

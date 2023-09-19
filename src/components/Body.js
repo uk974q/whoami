@@ -23,7 +23,7 @@ const Body = () => {
     return(
         <div className={`flex flex-col dark:text-white dark:bg-black`}>
             <Sidebar screenWidth={screenWidth} />
-            <div className={`${isDrawMenu ? "hidden" : ""}`}>
+            <div className={`${isDrawMenu ? "hidden" : ""} mb-5`}>
                 <Outlet />
             </div>
         </div>

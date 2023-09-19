@@ -9,12 +9,14 @@ import { Provider } from 'react-redux';
 import appStore from './utils/appStore';
 import Life from './components/Life';
 import Showcase from './components/Showcase';
+import Footer from './components/Footer';
 
 const Portfolio = () => {
   return(
       <Provider store={appStore} >
         <Header />
         <Outlet />
+        <Footer />
       </Provider>
   )
 }
@@ -54,7 +56,7 @@ const appRoutes = createBrowserRouter([
 
 function App() {
   return (
-    <div className="bg-black flex flex-col">
+    <div id="portfolioApp" className="bg-black flex flex-col h-[100vh]">
         <RouterProvider router={appRoutes}>
           <Portfolio />
         </RouterProvider>
