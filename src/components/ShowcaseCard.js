@@ -6,7 +6,7 @@ const ShowcaseCard = ({value}) => {
     const darkMode = useSelector((store) => store.darkMode.isDark)
     const {path1, path2, path3, path4, projectName, desc, shortDesc, githubLink, projectLink} = value
     return (
-        <div className='w-2/3 h-[400px] flex flex-col lg:grid lg:grid-cols-2 grid-rows-2 border-2 border-red-700 mt-5'>
+        <div className='w-2/3 flex flex-col lg:grid lg:grid-cols-2 grid-rows-2 border-2 border-red-700 mt-5'>
             <img src={require('../assets/'+path1)} alt="" className='p-2 w-full h-full' />
             <div className='p-2 flex flex-col h-full w-full'>
                 <h1 className='text-sm lg:text-2xl'>{projectName}</h1>
@@ -37,8 +37,8 @@ const ShowcaseCard = ({value}) => {
             </div>
             <img src={require('../assets/'+path2)} alt="" className='p-2 w-full h-full' />
             <div className='lg:grid lg:grid-cols-2 hidden max-h-full'>
-                <img src={require('../assets/'+path3)} alt="" className='p-2 w-full max-h-full h-auto' />
-                <img src={require('../assets/'+path4)} alt="" className='p-2 w-full max-h-full' />
+                <img src={require('../assets/'+path3)} alt="" className='p-2 w-full h-full' />
+                <img src={require('../assets/'+path4)} alt="" className='p-2 w-full h-full' />
             </div>
 
         </div>
