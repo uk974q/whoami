@@ -18,7 +18,7 @@ const ShowcaseCard = ({value}) => {
                 </div>
                 <div className='mt-auto flex justify-between'>
                     <a href={projectLink} className="text-red-600 dark:text-yellow-300" target="_blank" rel="noopener noreferrer">
-                        <span className='text-sm'>Myflix App</span><i className="las la-external-link-alt ml-2"></i>
+                        <span className='text-sm'>{projectName} App</span><i className="las la-external-link-alt ml-2"></i>
                     </a>
                     <a href={githubLink} target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 128 128" className="h-6 w-6 mr-5">
