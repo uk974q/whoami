@@ -38,14 +38,14 @@ export const COMPANIES = [
 ]
 
 export const DETAILS = {
-    summary: "Who?",
-    why: "Why?",
-    also: "Also,",
-    and:"And",
+    summary: "Who am i?",
+    why: "What do I think?",
+    also: "Anything else,",
+    and:"So, now?",
     whomami: "As a seasoned frontend developer with more than six years of experience, I have successfully contributed to a diverse range of projects spanning multiple domains. These domains include Technology, Communications, Data Science, Cybersecurity, and Hospitality. I have loved collaborating with different teams - designers, developers, analysts, testers and stakeholders in delivering user-friendly applications.",
     what: "I began as an Angular JS developer migrating a legacy application. As time marched on, I transitioned to Angular, and then Lodash and D3js. After gaining knowledge on React, I like it more due to its simplicity. What I've learned over the years is that, fundamentally, it's the basics that truly matter. Understanding the core trio of JavaScript, HTML, and CSS can be the ultimate game-changer. Once you grasp these foundational elements, leaping into the world of frameworks and libraries becomes a seamless journey.",
     backend: "I have had my hands-on playing with backend and databases. But there is some irresistible charm about JavaScript that pulls me towards it. In future, I would definitely like to work on backend if its Next.js or anything that has Javascript. ",
-    outro: "I am experienced, constantly learning and this journey is a joy filled with collaborations, mentoring, taking ownership and brainstorming to create something that is friendly."
+    outro: "I am experienced and constantly learning. This journey is a joy filled with gaining knowledge, collaborations, mentoring, taking ownership and brainstorming to create something that is friendly."
 }
 
 export const SKILLS ={
